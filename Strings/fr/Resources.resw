@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Nav_General" xml:space="preserve"><value>Général</value></data>
+  <data name="Nav_Touchpad" xml:space="preserve"><value>Pavé tactile</value></data>
+  <data name="Nav_Devices" xml:space="preserve"><value>Périphériques</value></data>
+  <data name="Nav_Shortcuts" xml:space="preserve"><value>Raccourcis</value></data>
+  <data name="Nav_Screenshots" xml:space="preserve"><value>Captures</value></data>
+  <data name="Nav_Memo" xml:space="preserve"><value>Mémo rapide</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Enregistrer</value></data>
+  <data name="Common_SaveNow" xml:space="preserve"><value>Enregistrer</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Ajouter</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Supprimer</value></data>
+  <data name="Common_New" xml:space="preserve"><value>Nouveau</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>Fermer</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Ouvrir</value></data>
+  <data name="Common_OpenFolder" xml:space="preserve"><value>Ouvrir le dossier</value></data>
+  <data name="Common_SavedAt" xml:space="preserve"><value>Enregistré ({0})</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>Suivre le système</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Sombre (noir/blanc)</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Clair (blanc/noir)</value></data>
+  <data name="General_Title" xml:space="preserve"><value>Général</value></data>
+  <data name="General_StartAtLogon" xml:space="preserve"><value>Démarrer avec Windows (MSIX StartupTask)</value></data>
+  <data name="General_MinimizeToTray" xml:space="preserve"><value>Réduire dans la barre d'état au lieu de fermer</value></data>
+  <data name="General_Theme" xml:space="preserve"><value>Thème</value></data>
+  <data name="General_Note" xml:space="preserve"><value>Quittez uniquement depuis le menu (Quitter). Fermer la fenêtre garde l'app résidente.</value></data>
+  <data name="General_About" xml:space="preserve"><value>À propos</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.0</value></data>
+  <data name="General_Developer" xml:space="preserve"><value>Développeur : Yuki Orita (yuki-orita)</value></data>
+  <data name="General_License" xml:space="preserve"><value>Licence : MIT License</value></data>
+  <data name="General_Language" xml:space="preserve"><value>Langue</value></data>
+  <data name="Lang_System" xml:space="preserve"><value>Système par défaut</value></data>
+  <data name="Lang_En" xml:space="preserve"><value>English</value></data>
+  <data name="Lang_Ja" xml:space="preserve"><value>日本語</value></data>
+  <data name="Lang_ZhTw" xml:space="preserve"><value>繁體中文（台灣）</value></data>
+  <data name="Lang_Pt" xml:space="preserve"><value>Português</value></data>
+  <data name="Lang_Fr" xml:space="preserve"><value>Français</value></data>
+  <data name="Lang_Es" xml:space="preserve"><value>Español</value></data>
+  <data name="Lang_Ru" xml:space="preserve"><value>Русский</value></data>
+  <data name="General_RestartTitle" xml:space="preserve"><value>Redémarrage requis</value></data>
+  <data name="General_RestartMsg" xml:space="preserve"><value>Redémarrez l'app pour appliquer la langue.</value></data>
+  <data name="General_RestartNow" xml:space="preserve"><value>Redémarrer</value></data>
+  <data name="General_RestartLater" xml:space="preserve"><value>Plus tard</value></data>
+  <data name="Touch_Title" xml:space="preserve"><value>Pavé tactile</value></data>
+  <data name="Touch_PtpOkTitle" xml:space="preserve"><value>Pavé tactile (HID) détecté</value></data>
+  <data name="Touch_PtpOkMsg" xml:space="preserve"><value>Mappage 3 doigts disponible. Mettez les gestes du SO sur Aucun.</value></data>
+  <data name="Touch_PtpNgTitle" xml:space="preserve"><value>Aucun pavé de précision trouvé</value></data>
+  <data name="Touch_PtpNgMsg" xml:space="preserve"><value>Pilote peut-être non pris en charge. Utilisez des raccourcis.</value></data>
+  <data name="Touch_Desc" xml:space="preserve"><value>Conflit avec les gestes 3/4 doigts de Windows. Pour un mappage perso, mettez les gestes 3 doigts du SO sur Aucun. Le tap 3 doigts est vu comme clic milieu.</value></data>
+  <data name="Touch_OpenSettings" xml:space="preserve"><value>Ouvrir les réglages tactiles</value></data>
+  <data name="Touch_Remap" xml:space="preserve"><value>Activer le mappage 3 doigts</value></data>
+  <data name="Touch_Subtitle" xml:space="preserve"><value>Mappage des gestes</value></data>
+  <data name="Devices_Title" xml:space="preserve"><value>Périphériques d'entrée</value></data>
+  <data name="Devices_Rescan" xml:space="preserve"><value>Rescanner</value></data>
+  <data name="Devices_UsbOnly" xml:space="preserve"><value>USB uniquement</value></data>
+  <data name="Devices_LastInput" xml:space="preserve"><value>Dernière entrée : {0}</value></data>
+  <data name="Devices_LastInput_None" xml:space="preserve"><value>Dernière entrée : —</value></data>
+  <data name="Devices_LastInput_Unknown" xml:space="preserve"><value>Dernière entrée : inconnu</value></data>
+  <data name="Devices_Rules" xml:space="preserve"><value>Règles par appareil</value></data>
+  <data name="Devices_NewRule" xml:space="preserve"><value>Nouvelle règle</value></data>
+  <data name="Devices_DevicePh" xml:space="preserve"><value>Choisir un appareil</value></data>
+  <data name="Devices_TriggerPh" xml:space="preserve"><value>Déclencheur (ex. F13 / Ctrl+K)</value></data>
+  <data name="Devices_PayloadPh" xml:space="preserve"><value>Texte, touches, chemin…</value></data>
+  <data name="Devices_NeedFields" xml:space="preserve"><value>Indiquez appareil et déclencheur.</value></data>
+  <data name="Devices_RuleAdded" xml:space="preserve"><value>Règle ajoutée. Les déclencheurs agissent comme raccourcis, étiquetés par appareil.</value></data>
+  <data name="Devices_Count" xml:space="preserve"><value>{0} trouvés ({1} USB) — affichés {2}</value></data>
+  <data name="Short_Title" xml:space="preserve"><value>Raccourcis perso</value></data>
+  <data name="Short_Explainer" xml:space="preserve"><value>Les combos Win réservées par le SO sont interceptées par hook bas niveau. Win+L etc. protégés : impossibles.</value></data>
+  <data name="Short_Name" xml:space="preserve"><value>Nom</value></data>
+  <data name="Short_Hotkey" xml:space="preserve"><value>Raccourci (ex. Win+U / Ctrl+Alt+K / F13)</value></data>
+  <data name="Short_Action" xml:space="preserve"><value>Action</value></data>
+  <data name="Short_Content" xml:space="preserve"><value>Contenu</value></data>
+  <data name="Short_Enabled" xml:space="preserve"><value>Activé</value></data>
+  <data name="Short_CaptureHint" xml:space="preserve"><value>Appuyez sur les touches du raccourci. Échap pour annuler.</value></data>
+  <data name="Short_RegNone" xml:space="preserve"><value>État : non appliqué (enregistrez)</value></data>
+  <data name="Short_RegOs" xml:space="preserve"><value>Enregistré OS</value></data>
+  <data name="Short_RegHook" xml:space="preserve"><value>Intercepté (hook)</value></data>
+  <data name="Short_BadHotkey" xml:space="preserve"><value>Format invalide (ex. Win+U).</value></data>
+  <data name="Short_DupWarn" xml:space="preserve"><value>Enregistré avec avertissements : {0} doublon(s).</value></data>
+  <data name="Shots_Title" xml:space="preserve"><value>Captures d'écran</value></data>
+  <data name="Shots_Profiles" xml:space="preserve"><value>Profils</value></data>
+  <data name="Shots_Name" xml:space="preserve"><value>Nom du profil</value></data>
+  <data name="Shots_Hotkey" xml:space="preserve"><value>Raccourci (ex. PrintScreen / Ctrl+Shift+S)</value></data>
+  <data name="Shots_Scope" xml:space="preserve"><value>Zone</value></data>
+  <data name="Shots_ScopeFull" xml:space="preserve"><value>Écran complet (tous écrans)</value></data>
+  <data name="Shots_ScopeActive" xml:space="preserve"><value>Fenêtre active</value></data>
+  <data name="Shots_ScopeRegion" xml:space="preserve"><value>Sélectionner une zone</value></data>
+  <data name="Shots_Folder" xml:space="preserve"><value>Dossier de sortie</value></data>
+  <data name="Shots_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Shots_Preview" xml:space="preserve"><value>Aperçu en secondes (0=off, max 30)</value></data>
+  <data name="Shots_Cursor" xml:space="preserve"><value>Inclure le curseur</value></data>
+  <data name="Shots_Shoot" xml:space="preserve"><value>Capturer</value></data>
+  <data name="MemoSet_Explainer" xml:space="preserve"><value>Ouvrez un popup via raccourci. Fermeture auto après inactivité, contenu conservé après redémarrage. Collage toujours en texte brut ; seuls les images acceptées.</value></data>
+  <data name="MemoSet_Hotkey" xml:space="preserve"><value>Raccourci</value></data>
+  <data name="MemoSet_Seconds" xml:space="preserve"><value>Fermeture auto (3-60 s)</value></data>
+  <data name="MemoSet_Open" xml:space="preserve"><value>Ouvrir le mémo</value></data>
+  <data name="MemoSet_ClearImages" xml:space="preserve"><value>Supprimer les images</value></data>
+  <data name="MemoSet_ResetBounds" xml:space="preserve"><value>Réinitialiser taille/position</value></data>
+  <data name="MemoSet_BadHotkey" xml:space="preserve"><value>Format de raccourci invalide.</value></data>
+  <data name="MemoSet_ImagesCleared" xml:space="preserve"><value>Images supprimées.</value></data>
+  <data name="MemoSet_BoundsReset" xml:space="preserve"><value>Taille/position réinitialisées. Actif à la prochaine ouverture.</value></data>
+  <data name="MemoWin_Countdown" xml:space="preserve"><value>Fermeture dans {0} s (contenu enregistré)</value></data>
+  <data name="MemoWin_TextBoxPh" xml:space="preserve"><value>Note ici (collage en texte brut)</value></data>
+  <data name="MemoWin_Close" xml:space="preserve"><value>Fermer</value></data>
+  <data name="MemoWin_DropCaption" xml:space="preserve"><value>Ajouter l'image</value></data>
+  <data name="MemoWin_ImagesOnly" xml:space="preserve"><value>Seules les images peuvent être collées.</value></data>
+  <data name="MemoWin_NothingToPaste" xml:space="preserve"><value>Rien à coller.</value></data>
+  <data name="Preview_Open" xml:space="preserve"><value>Ouvrir</value></data>
+  <data name="Preview_Folder" xml:space="preserve"><value>Dossier</value></data>
+  <data name="Preview_Close" xml:space="preserve"><value>Fermer</value></data>
+  <data name="Preview_Countdown" xml:space="preserve"><value>{0} s</value></data>
+  <data name="Region_Hint" xml:space="preserve"><value>Glissez pour sélectionner (Échap = annuler)</value></data>
+  <data name="Tray_Settings" xml:space="preserve"><value>Ouvrir les réglages</value></data>
+  <data name="Tray_Memo" xml:space="preserve"><value>Ouvrir le mémo</value></data>
+  <data name="Tray_Shot" xml:space="preserve"><value>Capture d'écran</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Quitter</value></data>
+  <data name="Tray_Tooltip" xml:space="preserve"><value>win-plus — résident</value></data>
+  <data name="Tray_ShotSaved" xml:space="preserve"><value>Enregistré : {0}</value></data>
+  <data name="Tray_ShotFailed" xml:space="preserve"><value>Échec de la capture.</value></data>
+  <data name="Action_None" xml:space="preserve"><value>(aucune)</value></data>
+  <data name="Action_TaskView" xml:space="preserve"><value>Vue des tâches (Win+Tab)</value></data>
+  <data name="Action_AltTab" xml:space="preserve"><value>Basculer (Alt+Tab)</value></data>
+  <data name="Action_VDeskLeft" xml:space="preserve"><value>Bureau virtuel ←</value></data>
+  <data name="Action_VDeskRight" xml:space="preserve"><value>Bureau virtuel →</value></data>
+  <data name="Action_TypeText" xml:space="preserve"><value>Saisir du texte</value></data>
+  <data name="Action_SendKeys" xml:space="preserve"><value>Envoyer touches (ex. Ctrl+S)</value></data>
+  <data name="Action_Launch" xml:space="preserve"><value>Ouvrir app / URL</value></data>
+  <data name="Action_Screenshot" xml:space="preserve"><value>Capture d'écran</value></data>
+  <data name="Action_Memo" xml:space="preserve"><value>Ouvrir le mémo</value></data>
+  <data name="ActionHint_TypeText" xml:space="preserve"><value>Texte à saisir</value></data>
+  <data name="ActionHint_SendKeys" xml:space="preserve"><value>ex. Ctrl+Shift+S</value></data>
+  <data name="ActionHint_Launch" xml:space="preserve"><value>ex. notepad.exe / https://…</value></data>
+  <data name="ActionHint_Screenshot" xml:space="preserve"><value>Nom du profil (vide=premier)</value></data>
+  <data name="Gesture_Tap" xml:space="preserve"><value>Tap 3 doigts (clic)</value></data>
+  <data name="Gesture_Up" xml:space="preserve"><value>Défilement 3 doigts ↑</value></data>
+  <data name="Gesture_Down" xml:space="preserve"><value>Défilement 3 doigts ↓</value></data>
+  <data name="Gesture_Left" xml:space="preserve"><value>Défilement 3 doigts ←</value></data>
+  <data name="Gesture_Right" xml:space="preserve"><value>Défilement 3 doigts →</value></data>
+  <data name="Dev_Keyboard" xml:space="preserve"><value>Clavier</value></data>
+  <data name="Dev_Mouse" xml:space="preserve"><value>Souris</value></data>
+  <data name="Dev_Hid" xml:space="preserve"><value>HID</value></data>
+  <data name="Dev_Unknown" xml:space="preserve"><value>Inconnu</value></data>
+  <data name="Dev_BusUsb" xml:space="preserve"><value>USB</value></data>
+  <data name="Dev_BusBt" xml:space="preserve"><value>Bluetooth</value></data>
+  <data name="Dev_BusInternal" xml:space="preserve"><value>Interne</value></data>
+  <data name="Dev_BusOther" xml:space="preserve"><value>Autre</value></data>
+  <data name="Default_ShortcutName" xml:space="preserve"><value>Nouveau raccourci</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Annuler</value></data>
+  <data name="Uninstall_Title" xml:space="preserve"><value>Désinstaller</value></data>
+  <data name="Uninstall_Desc" xml:space="preserve"><value>Supprime proprement l'app et ses données.</value></data>
+  <data name="Uninstall_DeleteData" xml:space="preserve"><value>Supprimer réglages et mémos</value></data>
+  <data name="Uninstall_DeleteShots" xml:space="preserve"><value>Supprimer aussi les captures</value></data>
+  <data name="Uninstall_Run" xml:space="preserve"><value>Désinstaller</value></data>
+  <data name="Uninstall_ConfirmTitle" xml:space="preserve"><value>Confirmer</value></data>
+  <data name="Uninstall_ConfirmMsg" xml:space="preserve"><value>win-plus va être désinstallé. Continuer ?</value></data>
+  <data name="Uninstall_CertNote" xml:space="preserve"><value>Pour retirer le certificat, supprimez CN=yuki-orita des Personnes approuvées (admin).</value></data>
+  <data name="Uninstall_PortableMsg" xml:space="preserve"><value>Données supprimées. Supprimez le dossier manuellement.</value></data>
+  <data name="Action_WindowList" xml:space="preserve"><value>Liste fenêtres (Win+Tab)</value></data>
+  <data name="Action_ShowDesktop" xml:space="preserve"><value>Bureau (Win+D)</value></data>
+  <data name="Action_Maximize" xml:space="preserve"><value>Agrandir (Win+Up)</value></data>
+  <data name="Action_Minimize" xml:space="preserve"><value>Réduire (Win+Down)</value></data>
+  <data name="Action_CloseWindow" xml:space="preserve"><value>Fermer (Alt+F4)</value></data>
+  <data name="Action_Back" xml:space="preserve"><value>Précédent</value></data>
+  <data name="Action_Forward" xml:space="preserve"><value>Suivant</value></data>
+  <data name="Action_NextPage" xml:space="preserve"><value>Page suivante (PageDown)</value></data>
+  <data name="Action_PrevPage" xml:space="preserve"><value>Page précédente (PageUp)</value></data>
+  <data name="Action_Search" xml:space="preserve"><value>Recherche Windows (Win+S)</value></data>
+  <data name="Action_Explorer" xml:space="preserve"><value>Explorateur (Win+E)</value></data>
+  <data name="Action_Terminal" xml:space="preserve"><value>Windows Terminal</value></data>
+  <data name="Action_Calc" xml:space="preserve"><value>Calculatrice</value></data>
+  <data name="Action_TaskMgr" xml:space="preserve"><value>Gestionnaire des tâches</value></data>
+  <data name="Action_Lock" xml:space="preserve"><value>Verrouiller (Win+L)</value></data>
+  <data name="Action_PlayPause" xml:space="preserve"><value>Lecture / pause</value></data>
+  <data name="Action_NextTrack" xml:space="preserve"><value>Piste suivante</value></data>
+  <data name="Action_PrevTrack" xml:space="preserve"><value>Piste précédente</value></data>
+  <data name="Action_VolUp" xml:space="preserve"><value>Volume +</value></data>
+  <data name="Action_VolDown" xml:space="preserve"><value>Volume −</value></data>
+  <data name="Action_F11" xml:space="preserve"><value>Plein écran (F11)</value></data>
+  <data name="Action_Copy" xml:space="preserve"><value>Copier (Ctrl+C)</value></data>
+  <data name="Action_Paste" xml:space="preserve"><value>Coller (Ctrl+V)</value></data>
+  <data name="Action_Undo" xml:space="preserve"><value>Annuler (Ctrl+Z)</value></data>
+  <data name="Backup_Export" xml:space="preserve"><value>Exporter la config</value></data>
+  <data name="Backup_Import" xml:space="preserve"><value>Importer la config</value></data>
+  <data name="Backup_Exported" xml:space="preserve"><value>Exporté : {0}</value></data>
+  <data name="Backup_Imported" xml:space="preserve"><value>Importé : {0}</value></data>
+  <data name="Backup_BadFile" xml:space="preserve"><value>Erreur de fichier.</value></data>
+  <data name="Backup_ConfirmTitle" xml:space="preserve"><value>Confirmer l'import</value></data>
+  <data name="Backup_ConfirmMsg" xml:space="preserve"><value>La config actuelle sera sauvegardée et remplacée. Continuer ?</value></data>
+  <data name="Touch_Measure" xml:space="preserve"><value>Mesurer les doigts</value></data>
+  <data name="Touch_MeasureHint" xml:space="preserve"><value>Touchez le pavé une fois</value></data>
+  <data name="Touch_MeasureLive" xml:space="preserve"><value>Actuel : {0}</value></data>
+  <data name="Touch_MeasureResult" xml:space="preserve"><value>Doigts : {0}</value></data>
+  <data name="Touch_MeasureNoDevice" xml:space="preserve"><value>Aucun pavé mesurable</value></data>
+  <data name="Touch_MeasureNone" xml:space="preserve"><value>Aucune entrée détectée</value></data>
+  <data name="Default_ProfileName" xml:space="preserve"><value>Profil 1</value></data>
+</root>

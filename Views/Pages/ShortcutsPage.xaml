@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="WinPlus.Views.Pages.ShortcutsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Padding="24">
+        <StackPanel Spacing="12" MaxWidth="760">
+            <TextBlock x:Name="Title" Text="Shortcuts" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="Explainer" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" Text="" />
+            <ListView x:Name="ShortcutList" SelectionChanged="ShortcutList_SelectionChanged" MinHeight="160">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Spacing="2" Padding="0,6">
+                            <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}">
+                                <Run Text="{Binding Name}" /><Run Text="  [" /><Run Text="{Binding Hotkey}" /><Run Text="]" />
+                            </TextBlock>
+                            <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="{Binding ActionLabel}" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackPanel Spacing="6">
+                <TextBox x:Name="EditName" Header="Name" />
+                <TextBox x:Name="EditHotkey" Header="Hotkey" />
+                <ComboBox x:Name="EditActionType" Header="Action" />
+                <TextBox x:Name="EditPayload" Header="Content" />
+                <CheckBox x:Name="EditEnabled" Content="Enabled" />
+                <TextBlock x:Name="RegInfo" Style="{StaticResource CaptionTextBlockStyle}" />
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button x:Name="NewButton" Content="New" Click="New_Click" />
+                    <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" />
+                    <Button x:Name="DeleteButton" Content="Delete" Click="Delete_Click" />
+                </StackPanel>
+            </StackPanel>
+            <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

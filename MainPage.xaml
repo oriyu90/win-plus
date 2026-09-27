@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="WinPlus.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <NavigationView x:Name="Nav" IsBackButtonVisible="Collapsed"
+                    SelectionChanged="Nav_SelectionChanged"
+                    PaneDisplayMode="Auto" IsSettingsVisible="False">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Tag="general" Content="General">
+                <NavigationViewItem.Icon><SymbolIcon Symbol="Setting" /></NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Tag="touchpad" Content="Touchpad">
+                <NavigationViewItem.Icon><SymbolIcon Symbol="TouchPointer" /></NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Tag="devices" Content="Input devices">
+                <NavigationViewItem.Icon><SymbolIcon Symbol="Keyboard" /></NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Tag="shortcuts" Content="Shortcuts">
+                <NavigationViewItem.Icon><SymbolIcon Symbol="Calculator" /></NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Tag="shots" Content="Screenshots">
+                <NavigationViewItem.Icon><SymbolIcon Symbol="Camera" /></NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Tag="memo" Content="Quick memo">
+                <NavigationViewItem.Icon><SymbolIcon Symbol="Document" /></NavigationViewItem.Icon>
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
+        <Frame x:Name="ContentFrame" />
+    </NavigationView>
+</Page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="WinPlus.Views.Pages.ScreenshotsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Padding="24">
+        <StackPanel Spacing="12" MaxWidth="760">
+            <TextBlock x:Name="Title" Text="Screenshots" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="ProfilesTitle" Text="Profiles" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <ListView x:Name="ProfileList" SelectionChanged="ProfileList_SelectionChanged" MinHeight="110">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Spacing="2" Padding="0,6">
+                            <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}">
+                                <Run Text="{Binding Name}" /><Run Text="  [" /><Run Text="{Binding Hotkey}" /><Run Text="]" />
+                            </TextBlock>
+                            <TextBlock Style="{StaticResource CaptionTextBlockStyle}">
+                                <Run Text="{Binding Scope}" /><Run Text=" / " /><Run Text="{Binding Folder}" />
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackPanel Spacing="6">
+                <TextBox x:Name="EditName" Header="Name" />
+                <TextBox x:Name="EditHotkey" Header="Hotkey" />
+                <ComboBox x:Name="EditScope" Header="Area">
+                    <ComboBoxItem Tag="Full" Content="Full" />
+                    <ComboBoxItem Tag="Active" Content="Active" />
+                    <ComboBoxItem Tag="Region" Content="Region" />
+                </ComboBox>
+                <TextBox x:Name="EditFolder" Header="Folder" />
+                <ComboBox x:Name="EditFormat" Header="Format">
+                    <ComboBoxItem Tag="PNG" Content="PNG" />
+                    <ComboBoxItem Tag="JPG" Content="JPG" />
+                </ComboBox>
+                <NumberBox x:Name="EditPreview" Header="Preview" Minimum="0" Maximum="30" />
+                <CheckBox x:Name="EditCursor" Content="Cursor" />
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button x:Name="NewButton" Content="New" Click="New_Click" />
+                    <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" />
+                    <Button x:Name="DeleteButton" Content="Delete" Click="Delete_Click" />
+                    <Button x:Name="ShootButton" Content="Capture" Click="Shoot_Click" />
+                    <Button x:Name="FolderButton" Content="Folder" Click="OpenFolder_Click" />
+                </StackPanel>
+            </StackPanel>
+            <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

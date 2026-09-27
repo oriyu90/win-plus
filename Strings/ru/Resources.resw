@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Nav_General" xml:space="preserve"><value>Общие</value></data>
+  <data name="Nav_Touchpad" xml:space="preserve"><value>Тачпад</value></data>
+  <data name="Nav_Devices" xml:space="preserve"><value>Устройства</value></data>
+  <data name="Nav_Shortcuts" xml:space="preserve"><value>Горячие клавиши</value></data>
+  <data name="Nav_Screenshots" xml:space="preserve"><value>Скриншоты</value></data>
+  <data name="Nav_Memo" xml:space="preserve"><value>Быстрая заметка</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Сохранить</value></data>
+  <data name="Common_SaveNow" xml:space="preserve"><value>Сохранить сейчас</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Добавить</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Удалить</value></data>
+  <data name="Common_New" xml:space="preserve"><value>Создать</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Открыть</value></data>
+  <data name="Common_OpenFolder" xml:space="preserve"><value>Открыть папку</value></data>
+  <data name="Common_SavedAt" xml:space="preserve"><value>Сохранено ({0})</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>Как в системе</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Тёмная (чёрный/белый)</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Светлая (белый/чёрный)</value></data>
+  <data name="General_Title" xml:space="preserve"><value>Общие</value></data>
+  <data name="General_StartAtLogon" xml:space="preserve"><value>Запускать с Windows (MSIX StartupTask)</value></data>
+  <data name="General_MinimizeToTray" xml:space="preserve"><value>Сворачивать в трей вместо закрытия</value></data>
+  <data name="General_Theme" xml:space="preserve"><value>Тема</value></data>
+  <data name="General_Note" xml:space="preserve"><value>Выход — только из меню трея (Выход). Закрытие окна оставляет приложение в трее.</value></data>
+  <data name="General_About" xml:space="preserve"><value>О приложении</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.0</value></data>
+  <data name="General_Developer" xml:space="preserve"><value>Разработчик: Yuki Orita (yuki-orita)</value></data>
+  <data name="General_License" xml:space="preserve"><value>Лицензия: MIT License</value></data>
+  <data name="General_Language" xml:space="preserve"><value>Язык</value></data>
+  <data name="Lang_System" xml:space="preserve"><value>Системный</value></data>
+  <data name="Lang_En" xml:space="preserve"><value>English</value></data>
+  <data name="Lang_Ja" xml:space="preserve"><value>日本語</value></data>
+  <data name="Lang_ZhTw" xml:space="preserve"><value>繁體中文（台灣）</value></data>
+  <data name="Lang_Pt" xml:space="preserve"><value>Português</value></data>
+  <data name="Lang_Fr" xml:space="preserve"><value>Français</value></data>
+  <data name="Lang_Es" xml:space="preserve"><value>Español</value></data>
+  <data name="Lang_Ru" xml:space="preserve"><value>Русский</value></data>
+  <data name="General_RestartTitle" xml:space="preserve"><value>Нужен перезапуск</value></data>
+  <data name="General_RestartMsg" xml:space="preserve"><value>Перезапустите приложение, чтобы применить язык.</value></data>
+  <data name="General_RestartNow" xml:space="preserve"><value>Перезапустить</value></data>
+  <data name="General_RestartLater" xml:space="preserve"><value>Позже</value></data>
+  <data name="Touch_Title" xml:space="preserve"><value>Тачпад</value></data>
+  <data name="Touch_PtpOkTitle" xml:space="preserve"><value>Тачпад (HID) найден</value></data>
+  <data name="Touch_PtpOkMsg" xml:space="preserve"><value>Доступно назначение касания 3 пальцами. Жесты ОС поставьте «Нет».</value></data>
+  <data name="Touch_PtpNgTitle" xml:space="preserve"><value>Точный тачпад не найден</value></data>
+  <data name="Touch_PtpNgMsg" xml:space="preserve"><value>Драйвер может не поддерживаться. Используйте горячие клавиши.</value></data>
+  <data name="Touch_Desc" xml:space="preserve"><value>Конфликтует с жестами Windows 3/4 пальцами. Для своих назначений поставьте жесты 3 пальцев ОС в «Нет». Касание 3 пальцами видится как средняя кнопка.</value></data>
+  <data name="Touch_OpenSettings" xml:space="preserve"><value>Открыть настройки тачпада</value></data>
+  <data name="Touch_Remap" xml:space="preserve"><value>Включить назначение 3 пальцев</value></data>
+  <data name="Touch_Subtitle" xml:space="preserve"><value>Назначение жестов</value></data>
+  <data name="Devices_Title" xml:space="preserve"><value>Устройства ввода</value></data>
+  <data name="Devices_Rescan" xml:space="preserve"><value>Обновить</value></data>
+  <data name="Devices_UsbOnly" xml:space="preserve"><value>Только USB</value></data>
+  <data name="Devices_LastInput" xml:space="preserve"><value>Последний ввод: {0}</value></data>
+  <data name="Devices_LastInput_None" xml:space="preserve"><value>Последний ввод: —</value></data>
+  <data name="Devices_LastInput_Unknown" xml:space="preserve"><value>Последний ввод: неизвестно</value></data>
+  <data name="Devices_Rules" xml:space="preserve"><value>Правила устройств</value></data>
+  <data name="Devices_NewRule" xml:space="preserve"><value>Новое правило</value></data>
+  <data name="Devices_DevicePh" xml:space="preserve"><value>Выберите устройство</value></data>
+  <data name="Devices_TriggerPh" xml:space="preserve"><value>Триггер (напр. F13 / Ctrl+K)</value></data>
+  <data name="Devices_PayloadPh" xml:space="preserve"><value>Текст, клавиши, путь…</value></data>
+  <data name="Devices_NeedFields" xml:space="preserve"><value>Укажите устройство и триггер.</value></data>
+  <data name="Devices_RuleAdded" xml:space="preserve"><value>Правило добавлено. Триггеры работают как горячие клавиши с меткой устройства.</value></data>
+  <data name="Devices_Count" xml:space="preserve"><value>Найдено: {0} (USB: {1}) — показано: {2}</value></data>
+  <data name="Short_Title" xml:space="preserve"><value>Свои горячие клавиши</value></data>
+  <data name="Short_Explainer" xml:space="preserve"><value>Комбинации с Win, занятые ОС, перехватываются низкоуровневым хуком. Защищённые (Win+L и др.) зарегистрировать нельзя.</value></data>
+  <data name="Short_Name" xml:space="preserve"><value>Имя</value></data>
+  <data name="Short_Hotkey" xml:space="preserve"><value>Клавиши (напр. Win+U / Ctrl+Alt+K / F13)</value></data>
+  <data name="Short_Action" xml:space="preserve"><value>Действие</value></data>
+  <data name="Short_Content" xml:space="preserve"><value>Содержимое</value></data>
+  <data name="Short_Enabled" xml:space="preserve"><value>Включено</value></data>
+  <data name="Short_CaptureHint" xml:space="preserve"><value>Нажмите нужные клавиши. Esc — отмена.</value></data>
+  <data name="Short_RegNone" xml:space="preserve"><value>Статус: не применено (сохраните)</value></data>
+  <data name="Short_RegOs" xml:space="preserve"><value>Зарегистрировано в ОС</value></data>
+  <data name="Short_RegHook" xml:space="preserve"><value>Перехват хуком</value></data>
+  <data name="Short_BadHotkey" xml:space="preserve"><value>Неверный формат (напр. Win+U).</value></data>
+  <data name="Short_DupWarn" xml:space="preserve"><value>Сохранено с предупреждениями: дубликатов {0}.</value></data>
+  <data name="Shots_Title" xml:space="preserve"><value>Скриншоты</value></data>
+  <data name="Shots_Profiles" xml:space="preserve"><value>Профили</value></data>
+  <data name="Shots_Name" xml:space="preserve"><value>Имя профиля</value></data>
+  <data name="Shots_Hotkey" xml:space="preserve"><value>Клавиши (напр. PrintScreen / Ctrl+Shift+S)</value></data>
+  <data name="Shots_Scope" xml:space="preserve"><value>Область</value></data>
+  <data name="Shots_ScopeFull" xml:space="preserve"><value>Весь экран (все мониторы)</value></data>
+  <data name="Shots_ScopeActive" xml:space="preserve"><value>Активное окно</value></data>
+  <data name="Shots_ScopeRegion" xml:space="preserve"><value>Выбрать область</value></data>
+  <data name="Shots_Folder" xml:space="preserve"><value>Папка сохранения</value></data>
+  <data name="Shots_Format" xml:space="preserve"><value>Формат</value></data>
+  <data name="Shots_Preview" xml:space="preserve"><value>Предпросмотр, с (0=выкл, макс 30)</value></data>
+  <data name="Shots_Cursor" xml:space="preserve"><value>Включая курсор</value></data>
+  <data name="Shots_Shoot" xml:space="preserve"><value>Снять сейчас</value></data>
+  <data name="MemoSet_Explainer" xml:space="preserve"><value>Открывайте небольшое окно горячей клавишей. Само закроется после бездействия, содержимое переживёт перезагрузки. Вставка — только plain-text, из медиа — только картинки.</value></data>
+  <data name="MemoSet_Hotkey" xml:space="preserve"><value>Клавиши</value></data>
+  <data name="MemoSet_Seconds" xml:space="preserve"><value>Автозакрытие, с (3-60)</value></data>
+  <data name="MemoSet_Open" xml:space="preserve"><value>Открыть заметку</value></data>
+  <data name="MemoSet_ClearImages" xml:space="preserve"><value>Удалить картинки</value></data>
+  <data name="MemoSet_ResetBounds" xml:space="preserve"><value>Сбросить размер и позицию</value></data>
+  <data name="MemoSet_BadHotkey" xml:space="preserve"><value>Неверный формат клавиш.</value></data>
+  <data name="MemoSet_ImagesCleared" xml:space="preserve"><value>Картинки удалены.</value></data>
+  <data name="MemoSet_BoundsReset" xml:space="preserve"><value>Размер и позиция сброшены. Применится при следующем открытии.</value></data>
+  <data name="MemoWin_Countdown" xml:space="preserve"><value>Закроется через {0} с (содержимое сохранено)</value></data>
+  <data name="MemoWin_TextBoxPh" xml:space="preserve"><value>Заметка (вставка — plain-text)</value></data>
+  <data name="MemoWin_Close" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="MemoWin_DropCaption" xml:space="preserve"><value>Добавить картинку</value></data>
+  <data name="MemoWin_ImagesOnly" xml:space="preserve"><value>Можно вставлять только картинки.</value></data>
+  <data name="MemoWin_NothingToPaste" xml:space="preserve"><value>Нечего вставлять.</value></data>
+  <data name="Preview_Open" xml:space="preserve"><value>Открыть</value></data>
+  <data name="Preview_Folder" xml:space="preserve"><value>Папка</value></data>
+  <data name="Preview_Close" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="Preview_Countdown" xml:space="preserve"><value>{0} с</value></data>
+  <data name="Region_Hint" xml:space="preserve"><value>Выделите область (Esc — отмена)</value></data>
+  <data name="Tray_Settings" xml:space="preserve"><value>Открыть настройки</value></data>
+  <data name="Tray_Memo" xml:space="preserve"><value>Открыть заметку</value></data>
+  <data name="Tray_Shot" xml:space="preserve"><value>Снять экран</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Выход</value></data>
+  <data name="Tray_Tooltip" xml:space="preserve"><value>win-plus — в трее</value></data>
+  <data name="Tray_ShotSaved" xml:space="preserve"><value>Сохранено: {0}</value></data>
+  <data name="Tray_ShotFailed" xml:space="preserve"><value>Не удалось сохранить.</value></data>
+  <data name="Action_None" xml:space="preserve"><value>(нет)</value></data>
+  <data name="Action_TaskView" xml:space="preserve"><value>Представление задач (Win+Tab)</value></data>
+  <data name="Action_AltTab" xml:space="preserve"><value>Переключение окон (Alt+Tab)</value></data>
+  <data name="Action_VDeskLeft" xml:space="preserve"><value>Вирт. рабочий стол ←</value></data>
+  <data name="Action_VDeskRight" xml:space="preserve"><value>Вирт. рабочий стол →</value></data>
+  <data name="Action_TypeText" xml:space="preserve"><value>Ввести текст</value></data>
+  <data name="Action_SendKeys" xml:space="preserve"><value>Послать клавиши (напр. Ctrl+S)</value></data>
+  <data name="Action_Launch" xml:space="preserve"><value>Открыть app / URL</value></data>
+  <data name="Action_Screenshot" xml:space="preserve"><value>Снять экран</value></data>
+  <data name="Action_Memo" xml:space="preserve"><value>Открыть заметку</value></data>
+  <data name="ActionHint_TypeText" xml:space="preserve"><value>Текст для ввода</value></data>
+  <data name="ActionHint_SendKeys" xml:space="preserve"><value>напр. Ctrl+Shift+S</value></data>
+  <data name="ActionHint_Launch" xml:space="preserve"><value>напр. notepad.exe / https://…</value></data>
+  <data name="ActionHint_Screenshot" xml:space="preserve"><value>Имя профиля (пусто=первый)</value></data>
+  <data name="Gesture_Tap" xml:space="preserve"><value>Касание 3 пальцами (клик)</value></data>
+  <data name="Gesture_Up" xml:space="preserve"><value>Прокрутка 3 пальцами ↑</value></data>
+  <data name="Gesture_Down" xml:space="preserve"><value>Прокрутка 3 пальцами ↓</value></data>
+  <data name="Gesture_Left" xml:space="preserve"><value>Прокрутка 3 пальцами ←</value></data>
+  <data name="Gesture_Right" xml:space="preserve"><value>Прокрутка 3 пальцами →</value></data>
+  <data name="Dev_Keyboard" xml:space="preserve"><value>Клавиатура</value></data>
+  <data name="Dev_Mouse" xml:space="preserve"><value>Мышь</value></data>
+  <data name="Dev_Hid" xml:space="preserve"><value>HID</value></data>
+  <data name="Dev_Unknown" xml:space="preserve"><value>Неизвестно</value></data>
+  <data name="Dev_BusUsb" xml:space="preserve"><value>USB</value></data>
+  <data name="Dev_BusBt" xml:space="preserve"><value>Bluetooth</value></data>
+  <data name="Dev_BusInternal" xml:space="preserve"><value>Встроенное</value></data>
+  <data name="Dev_BusOther" xml:space="preserve"><value>Другое</value></data>
+  <data name="Default_ShortcutName" xml:space="preserve"><value>Новый ярлык</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="Uninstall_Title" xml:space="preserve"><value>Удаление</value></data>
+  <data name="Uninstall_Desc" xml:space="preserve"><value>Чисто удаляет приложение и его данные.</value></data>
+  <data name="Uninstall_DeleteData" xml:space="preserve"><value>Удалить настройки и заметки</value></data>
+  <data name="Uninstall_DeleteShots" xml:space="preserve"><value>Удалить и скриншоты</value></data>
+  <data name="Uninstall_Run" xml:space="preserve"><value>Удалить</value></data>
+  <data name="Uninstall_ConfirmTitle" xml:space="preserve"><value>Подтверждение</value></data>
+  <data name="Uninstall_ConfirmMsg" xml:space="preserve"><value>win-plus будет удалён. Продолжить?</value></data>
+  <data name="Uninstall_CertNote" xml:space="preserve"><value>Чтобы убрать сертификат, удалите CN=yuki-orita из доверенных (админ).</value></data>
+  <data name="Uninstall_PortableMsg" xml:space="preserve"><value>Данные удалены. Удалите папку вручную.</value></data>
+  <data name="Action_WindowList" xml:space="preserve"><value>Список окон (Win+Tab)</value></data>
+  <data name="Action_ShowDesktop" xml:space="preserve"><value>Рабочий стол (Win+D)</value></data>
+  <data name="Action_Maximize" xml:space="preserve"><value>Развернуть (Win+Up)</value></data>
+  <data name="Action_Minimize" xml:space="preserve"><value>Свернуть (Win+Down)</value></data>
+  <data name="Action_CloseWindow" xml:space="preserve"><value>Закрыть (Alt+F4)</value></data>
+  <data name="Action_Back" xml:space="preserve"><value>Назад</value></data>
+  <data name="Action_Forward" xml:space="preserve"><value>Вперёд</value></data>
+  <data name="Action_NextPage" xml:space="preserve"><value>След. страница (PageDown)</value></data>
+  <data name="Action_PrevPage" xml:space="preserve"><value>Пред. страница (PageUp)</value></data>
+  <data name="Action_Search" xml:space="preserve"><value>Поиск Windows (Win+S)</value></data>
+  <data name="Action_Explorer" xml:space="preserve"><value>Проводник (Win+E)</value></data>
+  <data name="Action_Terminal" xml:space="preserve"><value>Windows Terminal</value></data>
+  <data name="Action_Calc" xml:space="preserve"><value>Калькулятор</value></data>
+  <data name="Action_TaskMgr" xml:space="preserve"><value>Диспетчер задач</value></data>
+  <data name="Action_Lock" xml:space="preserve"><value>Блокировка (Win+L)</value></data>
+  <data name="Action_PlayPause" xml:space="preserve"><value>Старт / пауза</value></data>
+  <data name="Action_NextTrack" xml:space="preserve"><value>След. трек</value></data>
+  <data name="Action_PrevTrack" xml:space="preserve"><value>Пред. трек</value></data>
+  <data name="Action_VolUp" xml:space="preserve"><value>Громче</value></data>
+  <data name="Action_VolDown" xml:space="preserve"><value>Тише</value></data>
+  <data name="Action_F11" xml:space="preserve"><value>Во весь экран (F11)</value></data>
+  <data name="Action_Copy" xml:space="preserve"><value>Копировать (Ctrl+C)</value></data>
+  <data name="Action_Paste" xml:space="preserve"><value>Вставить (Ctrl+V)</value></data>
+  <data name="Action_Undo" xml:space="preserve"><value>Отменить (Ctrl+Z)</value></data>
+  <data name="Backup_Export" xml:space="preserve"><value>Экспорт настроек</value></data>
+  <data name="Backup_Import" xml:space="preserve"><value>Импорт настроек</value></data>
+  <data name="Backup_Exported" xml:space="preserve"><value>Экспортировано: {0}</value></data>
+  <data name="Backup_Imported" xml:space="preserve"><value>Импортировано: {0}</value></data>
+  <data name="Backup_BadFile" xml:space="preserve"><value>Ошибка файла.</value></data>
+  <data name="Backup_ConfirmTitle" xml:space="preserve"><value>Подтверждение</value></data>
+  <data name="Backup_ConfirmMsg" xml:space="preserve"><value>Текущие настройки будут сохранены в бэкап и заменены. Продолжить?</value></data>
+  <data name="Touch_Measure" xml:space="preserve"><value>Измерить пальцы</value></data>
+  <data name="Touch_MeasureHint" xml:space="preserve"><value>Коснитесь тачпада один раз</value></data>
+  <data name="Touch_MeasureLive" xml:space="preserve"><value>Сейчас: {0}</value></data>
+  <data name="Touch_MeasureResult" xml:space="preserve"><value>Пальцев: {0}</value></data>
+  <data name="Touch_MeasureNoDevice" xml:space="preserve"><value>Нет тачпада для измерения</value></data>
+  <data name="Touch_MeasureNone" xml:space="preserve"><value>Ввод не обнаружен</value></data>
+  <data name="Default_ProfileName" xml:space="preserve"><value>Профиль 1</value></data>
+</root>

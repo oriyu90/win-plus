@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="WinPlus.Views.Pages.GeneralPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Padding="24">
+        <StackPanel Spacing="12" MaxWidth="720">
+            <TextBlock x:Name="Title" Text="General" Style="{StaticResource TitleTextBlockStyle}" />
+            <CheckBox x:Name="StartAtLogon" Content="Start with Windows" />
+            <CheckBox x:Name="MinimizeToTray" Content="Minimize to tray" />
+            <StackPanel Spacing="4">
+                <TextBlock x:Name="ThemeLabel" Text="Theme" />
+                <ComboBox x:Name="ThemeBox">
+                    <ComboBoxItem Tag="System" Content="System" />
+                    <ComboBoxItem Tag="Dark" Content="Dark" />
+                    <ComboBoxItem Tag="Light" Content="Light" />
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Spacing="4">
+                <TextBlock x:Name="LanguageLabel" Text="Language" />
+                <ComboBox x:Name="LanguageBox" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="SaveButton" Content="Save" Click="Save_Click" />
+                <Button x:Name="OpenFolderButton" Content="Open folder" Click="OpenFolder_Click" />
+                <Button x:Name="ExportButton" Content="Export" Click="Export_Click" />
+                <Button x:Name="ImportButton" Content="Import" Click="Import_Click" />
+            </StackPanel>
+            <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="Wrap" />
+            <TextBlock x:Name="Note" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" Text="" />
+            <TextBlock x:Name="UninstallTitle" Text="Uninstall" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <TextBlock x:Name="UninstallDesc" TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" Text="" />
+            <CheckBox x:Name="DeleteData" Content="Delete data" IsChecked="True" />
+            <CheckBox x:Name="DeleteShots" Content="Delete shots" />
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="UninstallButton" Content="Uninstall" Click="Uninstall_Click" />
+            </StackPanel>
+            <TextBlock x:Name="CertNote" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" Text="" />
+            <TextBlock x:Name="AboutTitle" Text="About" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                <Run x:Name="VersionRun" Text="win-plus 1.0.0" FontWeight="SemiBold" /><LineBreak />
+                <Run x:Name="DeveloperRun" Text="Developer" /><LineBreak />
+                <Run x:Name="LicenseRun" Text="License" />
+            </TextBlock>
+            <HyperlinkButton Content="https://studio-rizi.pages.dev/" NavigateUri="https://studio-rizi.pages.dev/" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

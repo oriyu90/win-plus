@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="WinPlus.Views.Pages.MemoSettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Padding="24">
+        <StackPanel Spacing="12" MaxWidth="720">
+            <TextBlock x:Name="Title" Text="Memo" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="Explainer" TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" Text="" />
+            <TextBox x:Name="EditHotkey" Header="Hotkey" />
+            <NumberBox x:Name="EditSeconds" Header="Seconds" Minimum="3" Maximum="60" />
+            <ComboBox x:Name="EditTheme" Header="Theme">
+                <ComboBoxItem Tag="System" Content="System" />
+                <ComboBoxItem Tag="Dark" Content="Dark" />
+                <ComboBoxItem Tag="Light" Content="Light" />
+            </ComboBox>
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" />
+                <Button x:Name="OpenButton" Content="Open" Click="Open_Click" />
+                <Button x:Name="ClearButton" Content="Clear" Click="ClearImages_Click" />
+                <Button x:Name="ResetBoundsButton" Content="Reset" Click="ResetBounds_Click" />
+            </StackPanel>
+            <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

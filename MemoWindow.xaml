@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window
+    x:Class="WinPlus.MemoWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="win-plus"
+    mc:Ignorable="d">
+
+    <Grid x:Name="Root" AllowDrop="True" DragOver="Root_DragOver" Drop="Root_Drop">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Countdown" Margin="10,6,10,2" Style="{StaticResource CaptionTextBlockStyle}" />
+        <TextBox x:Name="MemoBox" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap"
+                 BorderThickness="0" Padding="10,6,10,6" VerticalAlignment="Stretch" />
+        <ListView x:Name="ImageList" Grid.Row="2" SelectionMode="None"
+                  HorizontalContentAlignment="Stretch" Padding="10,0,10,0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnSpacing="8" Padding="0,4" HorizontalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Preview}" Stretch="Uniform" HorizontalAlignment="Stretch"
+                               CanDrag="True" DragStarting="Image_DragStarting" />
+                        <Button Grid.Column="1" Content="{Binding DeleteLabel}" Tag="{Binding Item}" Click="DeleteImage_Click" VerticalAlignment="Center" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Grid.Row="3" x:Name="CloseButton" Content="Close" Click="Close_Click"
+                HorizontalAlignment="Right" Margin="10,4,10,8" />
+    </Grid>
+</Window>

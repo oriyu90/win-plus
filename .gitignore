@@ -1,0 +1,11 @@
+bin/
+obj/
+*.pfx
+*.cer
+dist/*.msix
+dist/*.zip
+dist/win-plus-portable/
+dist/win-plus-portable-x86/
+.winapp/
+.vs/
+TestResults/

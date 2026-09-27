@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Nav_General" xml:space="preserve"><value>全般</value></data>
+  <data name="Nav_Touchpad" xml:space="preserve"><value>トラックパッド</value></data>
+  <data name="Nav_Devices" xml:space="preserve"><value>入力デバイス</value></data>
+  <data name="Nav_Shortcuts" xml:space="preserve"><value>ショートカット</value></data>
+  <data name="Nav_Screenshots" xml:space="preserve"><value>スクショ</value></data>
+  <data name="Nav_Memo" xml:space="preserve"><value>一時メモ</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>保存</value></data>
+  <data name="Common_SaveNow" xml:space="preserve"><value>今すぐ保存</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>追加</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>削除</value></data>
+  <data name="Common_New" xml:space="preserve"><value>新規</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>閉じる</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>開く</value></data>
+  <data name="Common_OpenFolder" xml:space="preserve"><value>フォルダを開く</value></data>
+  <data name="Common_SavedAt" xml:space="preserve"><value>保存しました ({0})</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>システムに合わせる</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>ダーク (黒背景×白文字)</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>ライト (白背景×黒文字)</value></data>
+  <data name="General_Title" xml:space="preserve"><value>全般</value></data>
+  <data name="General_StartAtLogon" xml:space="preserve"><value>Windows 起動時に開始する (MSIX StartupTask)</value></data>
+  <data name="General_MinimizeToTray" xml:space="preserve"><value>×ボタンで閉じずにトレイに格納する</value></data>
+  <data name="General_Theme" xml:space="preserve"><value>テーマ</value></data>
+  <data name="General_Note" xml:space="preserve"><value>終了はタスクトレイの右クリックメニュー「終了」からのみ行えます。通常のウィンドウ操作では常駐を続けます。</value></data>
+  <data name="General_About" xml:space="preserve"><value>このアプリについて</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.0</value></data>
+  <data name="General_Developer" xml:space="preserve"><value>開発者: 折田悠希 (yuki-orita)</value></data>
+  <data name="General_License" xml:space="preserve"><value>ライセンス: MIT License</value></data>
+  <data name="General_Language" xml:space="preserve"><value>言語</value></data>
+  <data name="Lang_System" xml:space="preserve"><value>システムに合わせる</value></data>
+  <data name="Lang_En" xml:space="preserve"><value>English</value></data>
+  <data name="Lang_Ja" xml:space="preserve"><value>日本語</value></data>
+  <data name="Lang_ZhTw" xml:space="preserve"><value>繁體中文（台灣）</value></data>
+  <data name="Lang_Pt" xml:space="preserve"><value>Português</value></data>
+  <data name="Lang_Fr" xml:space="preserve"><value>Français</value></data>
+  <data name="Lang_Es" xml:space="preserve"><value>Español</value></data>
+  <data name="Lang_Ru" xml:space="preserve"><value>Русский</value></data>
+  <data name="General_RestartTitle" xml:space="preserve"><value>再起動が必要です</value></data>
+  <data name="General_RestartMsg" xml:space="preserve"><value>言語の適用にはアプリの再起動が必要です。</value></data>
+  <data name="General_RestartNow" xml:space="preserve"><value>今すぐ再起動</value></data>
+  <data name="General_RestartLater" xml:space="preserve"><value>後で</value></data>
+  <data name="Touch_Title" xml:space="preserve"><value>トラックパッド</value></data>
+  <data name="Touch_PtpOkTitle" xml:space="preserve"><value>タッチパッド (HID) を検出しました</value></data>
+  <data name="Touch_PtpOkMsg" xml:space="preserve"><value>3本指タップ割当が利用できます。OS側ジェスチャは「なし」推奨です。</value></data>
+  <data name="Touch_PtpNgTitle" xml:space="preserve"><value>精密タッチパッドを確認できません</value></data>
+  <data name="Touch_PtpNgMsg" xml:space="preserve"><value>非対応ドライバの可能性があります。ホットキー代替をご利用ください。</value></data>
+  <data name="Touch_Desc" xml:space="preserve"><value>Windows が予約する3本指/4本指ジェスチャと競合します。自前の割当を使う場合は、OS側の3本指ジェスチャを「なし」にしてください。3本指タップは中クリックとして検出します。</value></data>
+  <data name="Touch_OpenSettings" xml:space="preserve"><value>タッチパッド設定を開く</value></data>
+  <data name="Touch_Remap" xml:space="preserve"><value>3本指タップの割当を有効にする</value></data>
+  <data name="Touch_Subtitle" xml:space="preserve"><value>ジェスチャ割当</value></data>
+  <data name="Devices_Title" xml:space="preserve"><value>入力デバイス</value></data>
+  <data name="Devices_Rescan" xml:space="preserve"><value>再検出</value></data>
+  <data name="Devices_UsbOnly" xml:space="preserve"><value>USB接続のみ表示</value></data>
+  <data name="Devices_LastInput" xml:space="preserve"><value>最終入力: {0}</value></data>
+  <data name="Devices_LastInput_None" xml:space="preserve"><value>最終入力: —</value></data>
+  <data name="Devices_LastInput_Unknown" xml:space="preserve"><value>最終入力: 不明なデバイス</value></data>
+  <data name="Devices_Rules" xml:space="preserve"><value>デバイス別ルール</value></data>
+  <data name="Devices_NewRule" xml:space="preserve"><value>新規ルール</value></data>
+  <data name="Devices_DevicePh" xml:space="preserve"><value>デバイスを選択</value></data>
+  <data name="Devices_TriggerPh" xml:space="preserve"><value>トリガー (例: F13 / Ctrl+K)</value></data>
+  <data name="Devices_PayloadPh" xml:space="preserve"><value>文字列・キー・パス等</value></data>
+  <data name="Devices_NeedFields" xml:space="preserve"><value>デバイスとトリガーを入力してください。</value></data>
+  <data name="Devices_RuleAdded" xml:space="preserve"><value>ルールを追加しました。トリガーはデバイス名とセットで保存され、ホットキーとして動作します。</value></data>
+  <data name="Devices_Count" xml:space="preserve"><value>{0} 件検出 (USB {1} 件) — 表示中 {2} 件</value></data>
+  <data name="Short_Title" xml:space="preserve"><value>カスタムショートカット</value></data>
+  <data name="Short_Explainer" xml:space="preserve"><value>Winキーを含む組合せはOSが占有している場合、低レベルフックで横取りします。Win+L等の保護された組合せは登録できません。</value></data>
+  <data name="Short_Name" xml:space="preserve"><value>名前</value></data>
+  <data name="Short_Hotkey" xml:space="preserve"><value>ホットキー (例: Win+U / Ctrl+Alt+K / F13)</value></data>
+  <data name="Short_Action" xml:space="preserve"><value>アクション</value></data>
+  <data name="Short_Content" xml:space="preserve"><value>内容</value></data>
+  <data name="Short_Enabled" xml:space="preserve"><value>有効</value></data>
+  <data name="Short_CaptureHint" xml:space="preserve"><value>設定したいショートカットキーを押してください。escでキャンセル。</value></data>
+  <data name="Short_RegNone" xml:space="preserve"><value>登録状態: 未適用 (保存後に反映)</value></data>
+  <data name="Short_RegOs" xml:space="preserve"><value>OS登録</value></data>
+  <data name="Short_RegHook" xml:space="preserve"><value>フック横取り</value></data>
+  <data name="Short_BadHotkey" xml:space="preserve"><value>ホットキーの形式が正しくありません (例: Win+U)。</value></data>
+  <data name="Short_DupWarn" xml:space="preserve"><value>保存しました。警告: {0} 件の重複があります。</value></data>
+  <data name="Shots_Title" xml:space="preserve"><value>スクショ</value></data>
+  <data name="Shots_Profiles" xml:space="preserve"><value>プロファイル</value></data>
+  <data name="Shots_Name" xml:space="preserve"><value>プロファイル名</value></data>
+  <data name="Shots_Hotkey" xml:space="preserve"><value>ホットキー (例: PrintScreen / Ctrl+Shift+S)</value></data>
+  <data name="Shots_Scope" xml:space="preserve"><value>範囲</value></data>
+  <data name="Shots_ScopeFull" xml:space="preserve"><value>画面全体 (全モニタ)</value></data>
+  <data name="Shots_ScopeActive" xml:space="preserve"><value>アクティブウィンドウ</value></data>
+  <data name="Shots_ScopeRegion" xml:space="preserve"><value>範囲選択</value></data>
+  <data name="Shots_Folder" xml:space="preserve"><value>保存フォルダ</value></data>
+  <data name="Shots_Format" xml:space="preserve"><value>形式</value></data>
+  <data name="Shots_Preview" xml:space="preserve"><value>プレビュー表示秒数 (0=表示しない, 最大30)</value></data>
+  <data name="Shots_Cursor" xml:space="preserve"><value>マウスカーソルを含める</value></data>
+  <data name="Shots_Shoot" xml:space="preserve"><value>今すぐ撮る</value></data>
+  <data name="MemoSet_Explainer" xml:space="preserve"><value>ホットキーで小さなポップアップを開きます。最終操作から一定時間で自動的に閉じますが、内容はPC再起動後も保持されます。テキスト貼付は必ずプレーン化され、メディアは画像のみ受け付けます。</value></data>
+  <data name="MemoSet_Hotkey" xml:space="preserve"><value>ホットキー</value></data>
+  <data name="MemoSet_Seconds" xml:space="preserve"><value>自動で閉じる秒数 (3〜60)</value></data>
+  <data name="MemoSet_Open" xml:space="preserve"><value>メモを開く</value></data>
+  <data name="MemoSet_ClearImages" xml:space="preserve"><value>画像をすべて削除</value></data>
+  <data name="MemoSet_ResetBounds" xml:space="preserve"><value>サイズ・位置を規定値に戻す</value></data>
+  <data name="MemoSet_BadHotkey" xml:space="preserve"><value>ホットキーの形式が正しくありません。</value></data>
+  <data name="MemoSet_ImagesCleared" xml:space="preserve"><value>画像をすべて削除しました。</value></data>
+  <data name="MemoSet_BoundsReset" xml:space="preserve"><value>メモのサイズ・位置を規定値に戻しました。次回開くときから適用されます。</value></data>
+  <data name="MemoWin_Countdown" xml:space="preserve"><value>操作後{0}秒で閉じます (内容は保存されます)</value></data>
+  <data name="MemoWin_TextBoxPh" xml:space="preserve"><value>ここにメモ (貼付はプレーンテキストになります)</value></data>
+  <data name="MemoWin_Close" xml:space="preserve"><value>閉じる</value></data>
+  <data name="MemoWin_DropCaption" xml:space="preserve"><value>画像を追加</value></data>
+  <data name="MemoWin_ImagesOnly" xml:space="preserve"><value>画像のみ貼り付けできます。</value></data>
+  <data name="MemoWin_NothingToPaste" xml:space="preserve"><value>貼り付け可能なテキスト・画像がありません。</value></data>
+  <data name="Preview_Open" xml:space="preserve"><value>開く</value></data>
+  <data name="Preview_Folder" xml:space="preserve"><value>フォルダ</value></data>
+  <data name="Preview_Close" xml:space="preserve"><value>閉じる</value></data>
+  <data name="Preview_Countdown" xml:space="preserve"><value>{0}秒</value></data>
+  <data name="Region_Hint" xml:space="preserve"><value>ドラッグで範囲を選択 (Escで取消)</value></data>
+  <data name="Tray_Settings" xml:space="preserve"><value>設定を開く</value></data>
+  <data name="Tray_Memo" xml:space="preserve"><value>一時メモを開く</value></data>
+  <data name="Tray_Shot" xml:space="preserve"><value>スクショを撮る</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>終了</value></data>
+  <data name="Tray_Tooltip" xml:space="preserve"><value>win-plus — タスクトレイ常駐中</value></data>
+  <data name="Tray_ShotSaved" xml:space="preserve"><value>保存しました: {0}</value></data>
+  <data name="Tray_ShotFailed" xml:space="preserve"><value>スクショの保存に失敗しました。</value></data>
+  <data name="Action_None" xml:space="preserve"><value>(なし)</value></data>
+  <data name="Action_TaskView" xml:space="preserve"><value>タスク ビュー (Win+Tab)</value></data>
+  <data name="Action_AltTab" xml:space="preserve"><value>ウィンドウ切替 (Alt+Tab)</value></data>
+  <data name="Action_VDeskLeft" xml:space="preserve"><value>仮想デスクトップ ←</value></data>
+  <data name="Action_VDeskRight" xml:space="preserve"><value>仮想デスクトップ →</value></data>
+  <data name="Action_TypeText" xml:space="preserve"><value>文字列を入力</value></data>
+  <data name="Action_SendKeys" xml:space="preserve"><value>キーを送出 (例: Ctrl+S)</value></data>
+  <data name="Action_Launch" xml:space="preserve"><value>アプリ/URLを開く</value></data>
+  <data name="Action_Screenshot" xml:space="preserve"><value>スクショを撮る</value></data>
+  <data name="Action_Memo" xml:space="preserve"><value>一時メモを開く</value></data>
+  <data name="ActionHint_TypeText" xml:space="preserve"><value>入力する文字列</value></data>
+  <data name="ActionHint_SendKeys" xml:space="preserve"><value>例: Ctrl+Shift+S</value></data>
+  <data name="ActionHint_Launch" xml:space="preserve"><value>例: notepad.exe / https://…</value></data>
+  <data name="ActionHint_Screenshot" xml:space="preserve"><value>プロファイル名 (空=先頭)</value></data>
+  <data name="Gesture_Tap" xml:space="preserve"><value>3本指タップ (クリック)</value></data>
+  <data name="Gesture_Up" xml:space="preserve"><value>3本指スクロール ↑</value></data>
+  <data name="Gesture_Down" xml:space="preserve"><value>3本指スクロール ↓</value></data>
+  <data name="Gesture_Left" xml:space="preserve"><value>3本指スクロール ←</value></data>
+  <data name="Gesture_Right" xml:space="preserve"><value>3本指スクロール →</value></data>
+  <data name="Dev_Keyboard" xml:space="preserve"><value>キーボード</value></data>
+  <data name="Dev_Mouse" xml:space="preserve"><value>マウス</value></data>
+  <data name="Dev_Hid" xml:space="preserve"><value>HID</value></data>
+  <data name="Dev_Unknown" xml:space="preserve"><value>不明</value></data>
+  <data name="Dev_BusUsb" xml:space="preserve"><value>USB</value></data>
+  <data name="Dev_BusBt" xml:space="preserve"><value>Bluetooth</value></data>
+  <data name="Dev_BusInternal" xml:space="preserve"><value>内蔵</value></data>
+  <data name="Dev_BusOther" xml:space="preserve"><value>その他</value></data>
+  <data name="Default_ShortcutName" xml:space="preserve"><value>新しいショートカット</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>キャンセル</value></data>
+  <data name="Uninstall_Title" xml:space="preserve"><value>アンインストール</value></data>
+  <data name="Uninstall_Desc" xml:space="preserve"><value>アプリ本体とデータをきれいに削除します。</value></data>
+  <data name="Uninstall_DeleteData" xml:space="preserve"><value>設定・メモを削除する</value></data>
+  <data name="Uninstall_DeleteShots" xml:space="preserve"><value>スクショも削除する</value></data>
+  <data name="Uninstall_Run" xml:space="preserve"><value>アンインストール実行</value></data>
+  <data name="Uninstall_ConfirmTitle" xml:space="preserve"><value>アンインストールの確認</value></data>
+  <data name="Uninstall_ConfirmMsg" xml:space="preserve"><value>win-plus をアンインストールします。続行しますか?</value></data>
+  <data name="Uninstall_CertNote" xml:space="preserve"><value>開発証明書も消す場合は、信頼されたユーザーの CN=yuki-orita を削除してください (管理者)。</value></data>
+  <data name="Uninstall_PortableMsg" xml:space="preserve"><value>データを削除しました。アプリのフォルダを手動で削除してください。</value></data>
+  <data name="Action_WindowList" xml:space="preserve"><value>ウィンドウ一覧 (Win+Tab)</value></data>
+  <data name="Action_ShowDesktop" xml:space="preserve"><value>デスクトップ表示 (Win+D)</value></data>
+  <data name="Action_Maximize" xml:space="preserve"><value>ウィンドウ最大化 (Win+↑)</value></data>
+  <data name="Action_Minimize" xml:space="preserve"><value>ウィンドウ最小化 (Win+↓)</value></data>
+  <data name="Action_CloseWindow" xml:space="preserve"><value>閉じる (Alt+F4)</value></data>
+  <data name="Action_Back" xml:space="preserve"><value>戻る</value></data>
+  <data name="Action_Forward" xml:space="preserve"><value>進む</value></data>
+  <data name="Action_NextPage" xml:space="preserve"><value>次のページ (PageDown)</value></data>
+  <data name="Action_PrevPage" xml:space="preserve"><value>前のページ (PageUp)</value></data>
+  <data name="Action_Search" xml:space="preserve"><value>Windows検索 (Win+S)</value></data>
+  <data name="Action_Explorer" xml:space="preserve"><value>エクスプローラー (Win+E)</value></data>
+  <data name="Action_Terminal" xml:space="preserve"><value>Windows Terminal</value></data>
+  <data name="Action_Calc" xml:space="preserve"><value>電卓</value></data>
+  <data name="Action_TaskMgr" xml:space="preserve"><value>タスクマネージャー</value></data>
+  <data name="Action_Lock" xml:space="preserve"><value>PCをロック (Win+L)</value></data>
+  <data name="Action_PlayPause" xml:space="preserve"><value>再生 / 一時停止</value></data>
+  <data name="Action_NextTrack" xml:space="preserve"><value>次の曲</value></data>
+  <data name="Action_PrevTrack" xml:space="preserve"><value>前の曲</value></data>
+  <data name="Action_VolUp" xml:space="preserve"><value>音量を上げる</value></data>
+  <data name="Action_VolDown" xml:space="preserve"><value>音量を下げる</value></data>
+  <data name="Action_F11" xml:space="preserve"><value>全画面切替 (F11)</value></data>
+  <data name="Action_Copy" xml:space="preserve"><value>コピー (Ctrl+C)</value></data>
+  <data name="Action_Paste" xml:space="preserve"><value>貼り付け (Ctrl+V)</value></data>
+  <data name="Action_Undo" xml:space="preserve"><value>元に戻す (Ctrl+Z)</value></data>
+  <data name="Backup_Export" xml:space="preserve"><value>設定をエクスポート</value></data>
+  <data name="Backup_Import" xml:space="preserve"><value>設定をインポート</value></data>
+  <data name="Backup_Exported" xml:space="preserve"><value>エクスポートしました: {0}</value></data>
+  <data name="Backup_Imported" xml:space="preserve"><value>インポートしました: {0}</value></data>
+  <data name="Backup_BadFile" xml:space="preserve"><value>バックアップファイルエラー。</value></data>
+  <data name="Backup_ConfirmTitle" xml:space="preserve"><value>インポートの確認</value></data>
+  <data name="Backup_ConfirmMsg" xml:space="preserve"><value>現在の設定は退避の上で置き換えられます。続行しますか?</value></data>
+  <data name="Touch_Measure" xml:space="preserve"><value>本数を測定</value></data>
+  <data name="Touch_MeasureHint" xml:space="preserve"><value>タッチパッドに1回だけ触れてください</value></data>
+  <data name="Touch_MeasureLive" xml:space="preserve"><value>現在: {0}本</value></data>
+  <data name="Touch_MeasureResult" xml:space="preserve"><value>入力本数: {0}本</value></data>
+  <data name="Touch_MeasureNoDevice" xml:space="preserve"><value>測定できるタッチパッドがありません</value></data>
+  <data name="Touch_MeasureNone" xml:space="preserve"><value>入力を検出できませんでした</value></data>
+  <data name="Default_ProfileName" xml:space="preserve"><value>プロファイル1</value></data>
+</root>
