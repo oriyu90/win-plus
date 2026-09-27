@@ -40,7 +40,7 @@ public sealed partial class MemoSettingsPage : Page
         }
         var m = AppState.Current.Config.Memo;
         m.Hotkey = EditHotkey.Text.Trim();
-        m.AutoCloseSeconds = (int)Math.Clamp(EditSeconds.Value, 3, 60);
+        m.AutoCloseSeconds = double.IsNaN(EditSeconds.Value) ? 6 : (int)Math.Clamp(EditSeconds.Value, 3, 60);
         if (EditTheme.SelectedItem is ComboBoxItem item) m.Theme = (string)item.Tag;
         AppState.Current.Save();
         AppState.Current.RebuildHotkeys();

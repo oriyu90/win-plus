@@ -24,7 +24,7 @@
   <data name="General_Theme" xml:space="preserve"><value>主題</value></data>
   <data name="General_Note" xml:space="preserve"><value>只能從系統匣右鍵選單「結束」來關閉程式。關閉視窗會保持常駐。</value></data>
   <data name="General_About" xml:space="preserve"><value>關於本應用程式</value></data>
-  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.0</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.1</value></data>
   <data name="General_Developer" xml:space="preserve"><value>開發者: 折田悠希 (yuki-orita)</value></data>
   <data name="General_License" xml:space="preserve"><value>授權: MIT License</value></data>
   <data name="General_Language" xml:space="preserve"><value>語言</value></data>

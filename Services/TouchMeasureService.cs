@@ -73,6 +73,7 @@ public sealed class TouchMeasureService : IDisposable
     private readonly MessageWindow? _sinkWindow;
     private readonly List<PtpDev> _devices = new();
     private readonly Dictionary<nint, string> _handlePaths = new();
+    private readonly object _parseLock = new();
     private bool _disposed;
 
     public int MaxSeen { get; private set; }
@@ -183,50 +184,59 @@ public sealed class TouchMeasureService : IDisposable
     private void OnMessage(uint msg, nint wParam, nint lParam)
     {
         if (msg != Win32.WM_INPUT) return;
-        try
+        lock (_parseLock)
         {
-            uint size = 0;
-            uint headerSize = (uint)Marshal.SizeOf<Win32.RAWINPUTHEADER>();
-            Win32.GetRawInputData(lParam, Win32.RID_INPUT, nint.Zero, ref size, headerSize);
-            if (size < headerSize + 8) return;
-            var buf = Marshal.AllocHGlobal((int)size);
+            if (_disposed) return;
             try
             {
-                if (Win32.GetRawInputData(lParam, Win32.RID_INPUT, buf, ref size, headerSize) != size)
-                    return;
-                var header = Marshal.PtrToStructure<Win32.RAWINPUTHEADER>(buf);
-                if (header.dwType != Win32.RIM_TYPEHID) return;
-                if (!_handlePaths.TryGetValue(header.hDevice, out var path))
-                {
-                    path = ReadPath(header.hDevice);
-                    _handlePaths[header.hDevice] = path ?? "";
-                    if (string.IsNullOrEmpty(path)) return;
-                }
-                var dev = _devices.FirstOrDefault(d =>
-                    string.Equals(d.Path, path, StringComparison.OrdinalIgnoreCase));
-                if (dev is null) return;
-                int dataOff = (int)headerSize + 8;
-                uint dwSizeHid = (uint)Marshal.ReadInt32(buf, dataOff);
-                uint dwCount = (uint)Marshal.ReadInt32(buf, dataOff + 4);
-                if (dwSizeHid == 0 || dwSizeHid > 1024 || dwCount == 0 || dwCount > 64) return;
-                int active = 0;
-                for (uint i = 0; i < dwCount; i++)
-                {
-                    var report = new byte[dwSizeHid];
-                    Marshal.Copy(buf + dataOff + 8 + (int)(i * dwSizeHid), report, 0, (int)dwSizeHid);
-                    int a = ParseReport(dev, report);
-                    if (a > active) active = a;
-                }
-                if (active > 0)
-                {
-                    if (active > MaxSeen) MaxSeen = active;
-                    LastActive = DateTime.Now;
-                    Live?.Invoke(active);
-                }
+                ParseInput(lParam);
             }
-            finally { Marshal.FreeHGlobal(buf); }
+            catch { }
         }
-        catch { }
+    }
+
+    private void ParseInput(nint lParam)
+    {
+        uint size = 0;
+        uint headerSize = (uint)Marshal.SizeOf<Win32.RAWINPUTHEADER>();
+        Win32.GetRawInputData(lParam, Win32.RID_INPUT, nint.Zero, ref size, headerSize);
+        if (size < headerSize + 8) return;
+        var buf = Marshal.AllocHGlobal((int)size);
+        try
+        {
+            if (Win32.GetRawInputData(lParam, Win32.RID_INPUT, buf, ref size, headerSize) != size)
+                return;
+            var header = Marshal.PtrToStructure<Win32.RAWINPUTHEADER>(buf);
+            if (header.dwType != Win32.RIM_TYPEHID) return;
+            if (!_handlePaths.TryGetValue(header.hDevice, out var path))
+            {
+                path = ReadPath(header.hDevice);
+                _handlePaths[header.hDevice] = path ?? "";
+                if (string.IsNullOrEmpty(path)) return;
+            }
+            var dev = _devices.FirstOrDefault(d =>
+                string.Equals(d.Path, path, StringComparison.OrdinalIgnoreCase));
+            if (dev is null || dev.Preparsed == nint.Zero) return;
+            int dataOff = (int)headerSize + 8;
+            uint dwSizeHid = (uint)Marshal.ReadInt32(buf, dataOff);
+            uint dwCount = (uint)Marshal.ReadInt32(buf, dataOff + 4);
+            if (dwSizeHid == 0 || dwSizeHid > 1024 || dwCount == 0 || dwCount > 64) return;
+            int active = 0;
+            for (uint i = 0; i < dwCount; i++)
+            {
+                var report = new byte[dwSizeHid];
+                Marshal.Copy(buf + dataOff + 8 + (int)(i * dwSizeHid), report, 0, (int)dwSizeHid);
+                int a = ParseReport(dev, report);
+                if (a > active) active = a;
+            }
+            if (active > 0)
+            {
+                if (active > MaxSeen) MaxSeen = active;
+                LastActive = DateTime.Now;
+                Live?.Invoke(active);
+            }
+        }
+        finally { Marshal.FreeHGlobal(buf); }
     }
 
     private int ParseReport(PtpDev dev, byte[] report)
@@ -273,14 +283,17 @@ public sealed class TouchMeasureService : IDisposable
 
     public void Dispose()
     {
-        if (_disposed) return;
-        _disposed = true;
-        try { _sinkWindow?.Dispose(); } catch { }
-        foreach (var d in _devices)
+        lock (_parseLock)
         {
-            try { if (d.Preparsed != nint.Zero) HidP.HidD_FreePreparsedData(d.Preparsed); } catch { }
-            d.Preparsed = nint.Zero;
+            if (_disposed) return;
+            _disposed = true;
+            try { _sinkWindow?.Dispose(); } catch { }
+            foreach (var d in _devices)
+            {
+                try { if (d.Preparsed != nint.Zero) HidP.HidD_FreePreparsedData(d.Preparsed); } catch { }
+                d.Preparsed = nint.Zero;
+            }
+            _devices.Clear();
         }
-        _devices.Clear();
     }
 }

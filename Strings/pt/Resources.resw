@@ -24,7 +24,7 @@
   <data name="General_Theme" xml:space="preserve"><value>Tema</value></data>
   <data name="General_Note" xml:space="preserve"><value>Saia apenas pelo menu da bandeja (Sair). Fechar a janela mantém o app residente.</value></data>
   <data name="General_About" xml:space="preserve"><value>Sobre este app</value></data>
-  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.0</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.1</value></data>
   <data name="General_Developer" xml:space="preserve"><value>Desenvolvedor: Yuki Orita (yuki-orita)</value></data>
   <data name="General_License" xml:space="preserve"><value>Licença: MIT License</value></data>
   <data name="General_Language" xml:space="preserve"><value>Idioma</value></data>

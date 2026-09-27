@@ -85,7 +85,7 @@ public sealed partial class ScreenshotsPage : Page
         _editing.Scope = ((ComboBoxItem?)EditScope.SelectedItem)?.Tag as string ?? "Full";
         _editing.Format = ((ComboBoxItem?)EditFormat.SelectedItem)?.Tag as string ?? "PNG";
         _editing.Folder = EditFolder.Text.Trim();
-        _editing.PreviewSeconds = (int)EditPreview.Value;
+        _editing.PreviewSeconds = double.IsNaN(EditPreview.Value) ? 5 : (int)Math.Clamp(EditPreview.Value, 0, 30);
         _editing.IncludeCursor = EditCursor.IsChecked == true;
         if (string.IsNullOrWhiteSpace(_editing.Folder))
             _editing.Folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "win-plus", _editing.Name);

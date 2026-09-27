@@ -27,8 +27,17 @@ public sealed class TrayIconService : IDisposable
         {
             string? icoPath = null;
             try { icoPath = Path.Combine(AppContext.BaseDirectory, "Assets", "AppIcon.ico"); } catch { }
+            int smCx = 16, smCy = 16;
+            try
+            {
+                smCx = Win32.GetSystemMetrics(Win32.SM_CXSMICON);
+                smCy = Win32.GetSystemMetrics(Win32.SM_CYSMICON);
+                if (smCx <= 0 || smCx > 64) smCx = 16;
+                if (smCy <= 0 || smCy > 64) smCy = 16;
+            }
+            catch { }
             if (icoPath is not null && File.Exists(icoPath))
-                _icon = Win32Menu.LoadImage(nint.Zero, icoPath, Win32Menu.IMAGE_ICON, 0, 0, Win32Menu.LR_LOADFROMFILE | Win32Menu.LR_DEFAULTSIZE);
+                _icon = Win32Menu.LoadImage(nint.Zero, icoPath, Win32Menu.IMAGE_ICON, smCx, smCy, Win32Menu.LR_LOADFROMFILE);
             if (_icon == nint.Zero)
                 _icon = Win32.LoadIcon(nint.Zero, new nint(32512));
             var data = new Win32.NOTIFYICONDATA

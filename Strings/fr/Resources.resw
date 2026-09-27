@@ -24,7 +24,7 @@
   <data name="General_Theme" xml:space="preserve"><value>Thème</value></data>
   <data name="General_Note" xml:space="preserve"><value>Quittez uniquement depuis le menu (Quitter). Fermer la fenêtre garde l'app résidente.</value></data>
   <data name="General_About" xml:space="preserve"><value>À propos</value></data>
-  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.0</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.1</value></data>
   <data name="General_Developer" xml:space="preserve"><value>Développeur : Yuki Orita (yuki-orita)</value></data>
   <data name="General_License" xml:space="preserve"><value>Licence : MIT License</value></data>
   <data name="General_Language" xml:space="preserve"><value>Langue</value></data>

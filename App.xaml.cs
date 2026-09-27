@@ -53,8 +53,20 @@ public partial class App : Application
             Environment.Exit(0);
             return;
         }
-        _mutex = new Mutex(true, "win-plus_SingleInstance_Mutex_v1", out bool createdNew);
-        if (!createdNew)
+        try
+        {
+            _mutex = new Mutex(true, "win-plus_SingleInstance_Mutex_v1", out bool createdNew);
+            if (!createdNew)
+            {
+                Environment.Exit(0);
+                return;
+            }
+        }
+        catch (AbandonedMutexException)
+        {
+            try { _mutex = new Mutex(true, "win-plus_SingleInstance_Mutex_v1", out _); } catch { }
+        }
+        catch
         {
             Environment.Exit(0);
             return;

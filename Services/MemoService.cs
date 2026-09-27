@@ -27,6 +27,20 @@ public sealed class MemoService
 
     public MemoData Data { get; private set; } = new();
 
+    private bool TryLoadFile(string path)
+    {
+        try
+        {
+            var json = File.ReadAllText(path);
+            var d = JsonSerializer.Deserialize(json, MemoJsonContext.Default.MemoData);
+            if (d is null) return false;
+            d.Images.RemoveAll(i => !File.Exists(Path.Combine(ImageDir, i.FileName)));
+            Data = d;
+            return true;
+        }
+        catch { return false; }
+    }
+
     public void Load()
     {
         try
@@ -35,13 +49,16 @@ public sealed class MemoService
             Directory.CreateDirectory(ImageDir);
             if (File.Exists(DataPath))
             {
-                var json = File.ReadAllText(DataPath);
-                var d = JsonSerializer.Deserialize(json, MemoJsonContext.Default.MemoData);
-                if (d is not null)
+                if (TryLoadFile(DataPath)) return;
+                try
                 {
-                    d.Images.RemoveAll(i => !File.Exists(Path.Combine(ImageDir, i.FileName)));
-                    Data = d;
+                    if (File.Exists(DataPath + ".bak") && TryLoadFile(DataPath + ".bak"))
+                    {
+                        Save();
+                        return;
+                    }
                 }
+                catch { }
             }
         }
         catch { Data = new MemoData(); }
@@ -55,6 +72,8 @@ public sealed class MemoService
             var json = JsonSerializer.Serialize(Data, MemoJsonContext.Default.MemoData);
             var tmp = DataPath + ".tmp";
             File.WriteAllText(tmp, json);
+            if (File.Exists(DataPath))
+                File.Copy(DataPath, DataPath + ".bak", overwrite: true);
             File.Move(tmp, DataPath, overwrite: true);
         }
         catch { }
