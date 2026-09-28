@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <ScrollViewer Padding="24">
+    <ScrollViewer Padding="24" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled">
         <StackPanel Spacing="12" MaxWidth="720">
             <TextBlock x:Name="Title" Text="Memo" Style="{StaticResource TitleTextBlockStyle}" />
             <TextBlock x:Name="Explainer" TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" Text="" />
@@ -18,12 +18,12 @@
                 <ComboBoxItem Tag="Dark" Content="Dark" />
                 <ComboBoxItem Tag="Light" Content="Light" />
             </ComboBox>
-            <StackPanel Orientation="Horizontal" Spacing="8">
-                <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" />
-                <Button x:Name="OpenButton" Content="Open" Click="Open_Click" />
-                <Button x:Name="ClearButton" Content="Clear" Click="ClearImages_Click" />
-                <Button x:Name="ResetBoundsButton" Content="Reset" Click="ResetBounds_Click" />
-            </StackPanel>
+            <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="4">
+                <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" Margin="0,0,8,8" />
+                <Button x:Name="OpenButton" Content="Open" Click="Open_Click" Margin="0,0,8,8" />
+                <Button x:Name="ClearButton" Content="Clear" Click="ClearImages_Click" Margin="0,0,8,8" />
+                <Button x:Name="ResetBoundsButton" Content="Reset" Click="ResetBounds_Click" Margin="0,0,8,8" />
+            </VariableSizedWrapGrid>
             <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" />
         </StackPanel>
     </ScrollViewer>

@@ -7,20 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <ScrollViewer Padding="24">
+    <ScrollViewer Padding="24" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled">
         <StackPanel Spacing="12" MaxWidth="760">
             <TextBlock x:Name="Title" Text="Devices" Style="{StaticResource TitleTextBlockStyle}" />
-            <StackPanel Orientation="Horizontal" Spacing="8">
-                <Button x:Name="RefreshButton" Content="Rescan" Click="Refresh_Click" />
-                <CheckBox x:Name="UsbOnly" Content="USB only" />
-            </StackPanel>
+            <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="2">
+                <Button x:Name="RefreshButton" Content="Rescan" Click="Refresh_Click" Margin="0,0,8,8" />
+                <CheckBox x:Name="UsbOnly" Content="USB only" Margin="0,4,8,8" />
+            </VariableSizedWrapGrid>
             <TextBlock x:Name="LastInput" Style="{StaticResource CaptionTextBlockStyle}" Text="—" />
             <ListView x:Name="DeviceList" SelectionMode="Single" MinHeight="140">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Spacing="2" Padding="0,6">
                             <TextBlock Text="{Binding DisplayName}" Style="{StaticResource BodyStrongTextBlockStyle}" TextWrapping="Wrap" />
-                            <TextBlock Text="{Binding SubLine}" Style="{StaticResource CaptionTextBlockStyle}" />
+                            <TextBlock Text="{Binding SubLine}" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="Wrap" />
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -43,10 +43,10 @@
                 <TextBox x:Name="RuleTrigger" PlaceholderText="Trigger" />
                 <ComboBox x:Name="RuleActionType" />
                 <TextBox x:Name="RulePayload" PlaceholderText="Content" />
-                <StackPanel Orientation="Horizontal" Spacing="8">
-                    <Button x:Name="AddButton" Content="Add" Click="AddRule_Click" />
-                    <Button x:Name="DeleteButton" Content="Delete" Click="DeleteRule_Click" />
-                </StackPanel>
+                <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="2">
+                    <Button x:Name="AddButton" Content="Add" Click="AddRule_Click" Margin="0,0,8,8" />
+                    <Button x:Name="DeleteButton" Content="Delete" Click="DeleteRule_Click" Margin="0,0,8,8" />
+                </VariableSizedWrapGrid>
             </StackPanel>
             <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" />
         </StackPanel>

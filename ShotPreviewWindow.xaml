@@ -8,17 +8,35 @@
     Title="win-plus"
     mc:Ignorable="d">
 
-    <Grid RowSpacing="6" Padding="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Image x:Name="Preview" Stretch="Uniform" CanDrag="True" DragStarting="Preview_DragStarting" />
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="8">
-            <TextBlock x:Name="Countdown" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" />
-            <Button x:Name="OpenButton" Content="Open" Click="Open_Click" />
-            <Button x:Name="FolderButton" Content="Folder" Click="Folder_Click" />
-            <Button x:Name="CloseButton" Content="Close" Click="Close_Click" />
+    <ScrollViewer Padding="10" VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Spacing="6">
+            <Image x:Name="Preview" Stretch="Uniform" CanDrag="True" DragStarting="Preview_DragStarting" MaxHeight="480" />
+            <StackPanel x:Name="QrSection" Spacing="2" Visibility="Collapsed">
+                <TextBlock x:Name="QrHeader" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="Wrap" FontWeight="SemiBold" />
+                <ItemsControl x:Name="QrList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <HyperlinkButton Content="{Binding Display}" Tag="{Binding Url}" Click="QrLink_Click"
+                                             ToolTipService.ToolTip="{Binding Url}" Padding="0,4" HorizontalAlignment="Stretch"
+                                             HorizontalContentAlignment="Left">
+                                <HyperlinkButton.ContentTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" MaxLines="2" />
+                                    </DataTemplate>
+                                </HyperlinkButton.ContentTemplate>
+                            </HyperlinkButton>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <TextBlock x:Name="QrBlockedNote" Style="{StaticResource CaptionTextBlockStyle}" TextWrapping="Wrap" Visibility="Collapsed" />
+            </StackPanel>
+            <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="4">
+                <TextBlock x:Name="Countdown" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" Margin="0,0,8,8" />
+                <Button x:Name="OpenButton" Content="Open" Click="Open_Click" Margin="0,0,8,8" />
+                <Button x:Name="FolderButton" Content="Folder" Click="Folder_Click" Margin="0,0,8,8" />
+                <Button x:Name="CloseButton" Content="Close" Click="Close_Click" Margin="0,0,8,8" />
+            </VariableSizedWrapGrid>
         </StackPanel>
-    </Grid>
+    </ScrollViewer>
 </Window>

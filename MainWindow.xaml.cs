@@ -34,8 +34,8 @@ public sealed partial class MainWindow : Window
             double scale = dpi == 0 ? 1.0 : dpi / 96.0;
             var area = DisplayArea.GetFromWindowId(AppWindow.Id, DisplayAreaFallback.Primary);
             var work = area.WorkArea;
-            int w = Math.Min((int)(1180 * scale), Math.Max(360, work.Width - 40));
-            int h = Math.Min((int)(760 * scale), Math.Max(320, work.Height - 40));
+            int w = Math.Min((int)(1000 * scale), Math.Max(360, work.Width - 40));
+            int h = Math.Min((int)(720 * scale), Math.Max(320, work.Height - 40));
             AppWindow.Resize(new Windows.Graphics.SizeInt32(w, h));
             int x = work.X + Math.Max(0, (work.Width - w) / 2);
             int y = work.Y + Math.Max(0, (work.Height - h) / 3);

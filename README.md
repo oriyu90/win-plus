@@ -1,8 +1,8 @@
 # win-plus
 
 Windows 10 (1809+) / Windows 11 tray utility: touchpad gesture mapping,
-per-device input rules, custom shortcuts, multi-profile screenshots,
-and a quick memo popup. x64 + x86. UI in 7 languages.
+per-device input rules, custom shortcuts, multi-profile screenshots
+(with QR link detection), and a quick memo popup. x64 + x86. UI in 7 languages.
 
 - Author: Yuki_Orita ([折田悠希](https://studio-rizi.pages.dev/))
 - License: MIT (see `LICENSE`)
@@ -11,7 +11,7 @@ and a quick memo popup. x64 + x86. UI in 7 languages.
 
 ## Install (users)
 
-1. Download `win-plus_1.0.0_x64.msix` (or x86) from Releases.
+1. Download `win-plus_1.1.0_x64.msix` (or x86) from Releases.
 2. Trust `win-plus-devcert.cer` (Trusted People, dev certificate), then open the `.msix`.
 3. Or unzip the portable build and run `win-plus.exe`.
 

@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <ScrollViewer Padding="24">
+    <ScrollViewer Padding="24" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Disabled">
         <StackPanel Spacing="12" MaxWidth="760">
             <TextBlock x:Name="Title" Text="Shortcuts" Style="{StaticResource TitleTextBlockStyle}" />
             <TextBlock x:Name="Explainer" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" Text="" />
@@ -30,11 +30,11 @@
                 <TextBox x:Name="EditPayload" Header="Content" />
                 <CheckBox x:Name="EditEnabled" Content="Enabled" />
                 <TextBlock x:Name="RegInfo" Style="{StaticResource CaptionTextBlockStyle}" />
-                <StackPanel Orientation="Horizontal" Spacing="8">
-                    <Button x:Name="NewButton" Content="New" Click="New_Click" />
-                    <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" />
-                    <Button x:Name="DeleteButton" Content="Delete" Click="Delete_Click" />
-                </StackPanel>
+                <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="3">
+                    <Button x:Name="NewButton" Content="New" Click="New_Click" Margin="0,0,8,8" />
+                    <Button x:Name="SaveButton" Content="Save" Click="Save_Click" Style="{StaticResource AccentButtonStyle}" Margin="0,0,8,8" />
+                    <Button x:Name="DeleteButton" Content="Delete" Click="Delete_Click" Margin="0,0,8,8" />
+                </VariableSizedWrapGrid>
             </StackPanel>
             <TextBlock x:Name="Status" Style="{StaticResource CaptionTextBlockStyle}" />
         </StackPanel>

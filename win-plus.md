@@ -46,3 +46,18 @@
   `projects/manifest.json` + `website/content.js` を更新。
 - `npm run build` (= generate:seo + validate + count-files) と `npm test` を通す。
 - main へ push (Cloudflare Pages が自動デプロイ)。
+
+## v1.1.0 作業メモ (2026-09-29)
+
+- QR読み取り: `Services/QrCodeService.cs` 新設 (+ `ZXing.Net 0.16.11` 依存)。
+  `ShotPreviewWindow` が撮影後に裏で復号→画像下に http/https リンクのみ一覧
+  (最大10件・`TrySanitizeUrl` で scheme/長さ/制御文字を検証、タップ時のみ既定ブラウザ起動)。
+  新規 resw キーは `Qr_Title` / `Qr_BlockedNote` の2件×7言語。
+- レイアウト: 設定6ページの `ScrollViewer` は水平スクロール禁止、
+  ボタン行は `VariableSizedWrapGrid` で折り返し、既定窓は 1000x720。
+- 二重実行の修正: `App.xaml.cs` の `Actions.*Requested` 直接購読を削除
+  (AppState の転送経由に一本化。撮影・メモが2回走っていた)。
+- 開発機注意: `HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\*\sharedfx` が欠落すると
+  packaged/dev の framework-dependent 起動が 0x8007007B/1023 で失敗する。
+  `winapp run` は独自にランタイム解決するため影響なし。
+  ポータブル (self-contained) は影響なし。

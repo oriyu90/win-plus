@@ -13,7 +13,7 @@
   <Identity
     Name="yuki-orita.win-plus"
     Publisher="CN=yuki-orita"
-    Version="1.0.1.0" />
+    Version="1.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="27E7878F-6ACA-420E-A2CB-D9D5B6AFA006" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

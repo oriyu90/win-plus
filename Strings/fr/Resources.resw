@@ -24,7 +24,7 @@
   <data name="General_Theme" xml:space="preserve"><value>Thème</value></data>
   <data name="General_Note" xml:space="preserve"><value>Quittez uniquement depuis le menu (Quitter). Fermer la fenêtre garde l'app résidente.</value></data>
   <data name="General_About" xml:space="preserve"><value>À propos</value></data>
-  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.1</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.1.0</value></data>
   <data name="General_Developer" xml:space="preserve"><value>Développeur : Yuki Orita (yuki-orita)</value></data>
   <data name="General_License" xml:space="preserve"><value>Licence : MIT License</value></data>
   <data name="General_Language" xml:space="preserve"><value>Langue</value></data>
@@ -192,4 +192,6 @@
   <data name="Touch_MeasureNoDevice" xml:space="preserve"><value>Aucun pavé mesurable</value></data>
   <data name="Touch_MeasureNone" xml:space="preserve"><value>Aucune entrée détectée</value></data>
   <data name="Default_ProfileName" xml:space="preserve"><value>Profil 1</value></data>
+  <data name="Qr_Title" xml:space="preserve"><value>Liens dans cette capture ({0})</value></data>
+  <data name="Qr_BlockedNote" xml:space="preserve"><value>{0} élément(s) dangereux masqué(s) par sécurité.</value></data>
 </root>

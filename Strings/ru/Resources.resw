@@ -24,7 +24,7 @@
   <data name="General_Theme" xml:space="preserve"><value>Тема</value></data>
   <data name="General_Note" xml:space="preserve"><value>Выход — только из меню трея (Выход). Закрытие окна оставляет приложение в трее.</value></data>
   <data name="General_About" xml:space="preserve"><value>О приложении</value></data>
-  <data name="General_Version" xml:space="preserve"><value>win-plus 1.0.1</value></data>
+  <data name="General_Version" xml:space="preserve"><value>win-plus 1.1.0</value></data>
   <data name="General_Developer" xml:space="preserve"><value>Разработчик: Yuki Orita (yuki-orita)</value></data>
   <data name="General_License" xml:space="preserve"><value>Лицензия: MIT License</value></data>
   <data name="General_Language" xml:space="preserve"><value>Язык</value></data>
@@ -192,4 +192,6 @@
   <data name="Touch_MeasureNoDevice" xml:space="preserve"><value>Нет тачпада для измерения</value></data>
   <data name="Touch_MeasureNone" xml:space="preserve"><value>Ввод не обнаружен</value></data>
   <data name="Default_ProfileName" xml:space="preserve"><value>Профиль 1</value></data>
+  <data name="Qr_Title" xml:space="preserve"><value>Ссылки на снимке ({0})</value></data>
+  <data name="Qr_BlockedNote" xml:space="preserve"><value>В целях безопасности скрыто: {0}.</value></data>
 </root>

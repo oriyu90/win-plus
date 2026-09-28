@@ -103,8 +103,6 @@ public partial class App : Application
         state.Tray.ExitApp += () => RunOnUi(RealExit);
         state.ScreenshotRequested += name => RunOnUi(() => _ = TakeScreenshotAsync(name));
         state.MemoRequested += () => RunOnUi(ShowMemo);
-        state.Actions.MemoRequested += () => RunOnUi(ShowMemo);
-        state.Actions.ScreenshotRequested += name => RunOnUi(() => _ = TakeScreenshotAsync(name));
         state.Tray.Show(WinPlus.Services.S.T("Tray_Tooltip"));
 
         if (!silentStart)
